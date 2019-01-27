@@ -1,0 +1,1079 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://full_map.gd" type="Script" id=1]
+[ext_resource path="res://Untitled 9.png" type="Texture" id=2]
+[ext_resource path="res://Untitled 10.png" type="Texture" id=3]
+[ext_resource path="res://Untitled 11.png" type="Texture" id=4]
+[ext_resource path="res://Untitled 12.png" type="Texture" id=5]
+[ext_resource path="res://Untitled 2.png" type="Texture" id=6]
+[ext_resource path="res://Untitled 1.png" type="Texture" id=7]
+[ext_resource path="res://circus-tent.png" type="Texture" id=8]
+
+[node name="full_map" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="water" type="ColorRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1149.0
+margin_bottom = 599.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.18436, 0.278278, 0.707031, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="island" type="Sprite" parent="." index="1"]
+
+position = Vector2( 388.955, 320.347 )
+scale = Vector2( 0.981771, 0.335628 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="island2" type="Sprite" parent="." index="2"]
+
+position = Vector2( 390.193, 285.687 )
+scale = Vector2( 0.983382, 0.30178 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="island3" type="Sprite" parent="." index="3"]
+
+position = Vector2( 397.001, 288.782 )
+scale = Vector2( 0.992247, 0.304802 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="island4" type="Sprite" parent="." index="4"]
+
+position = Vector2( 397.001, 288.782 )
+scale = Vector2( 0.992247, 0.304802 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="guide" type="Sprite" parent="." index="5"]
+
+position = Vector2( 398.064, 292.462 )
+scale = Vector2( 0.977403, 0.298536 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="character" type="Sprite" parent="." index="6"]
+
+position = Vector2( 381.95, 163.026 )
+scale = Vector2( 0.0970739, 0.0910932 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="aigroe" type="LinkButton" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 368.0
+margin_top = 192.0
+margin_right = 408.0
+margin_bottom = 206.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="hatu" type="LinkButton" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 449.0
+margin_top = 209.0
+margin_right = 489.0
+margin_bottom = 223.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="sexat" type="LinkButton" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 504.0
+margin_top = 219.0
+margin_right = 544.0
+margin_bottom = 233.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="sasnak" type="LinkButton" parent="." index="10"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 447.0
+margin_top = 232.0
+margin_right = 487.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="aksala" type="LinkButton" parent="." index="11"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 537.0
+margin_top = 234.0
+margin_right = 577.0
+margin_bottom = 248.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="yesre" type="LinkButton" parent="." index="12"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 328.0
+margin_top = 215.0
+margin_right = 368.0
+margin_bottom = 229.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="nomrev" type="LinkButton" parent="." index="13"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 292.0
+margin_top = 232.0
+margin_right = 332.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="kroy" type="LinkButton" parent="." index="14"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 347.0
+margin_top = 243.0
+margin_right = 387.0
+margin_bottom = 257.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="aksarben" type="LinkButton" parent="." index="15"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 295.0
+margin_top = 267.0
+margin_right = 335.0
+margin_bottom = 281.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="aingri" type="LinkButton" parent="." index="16"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 664.0
+margin_top = 235.0
+margin_right = 704.0
+margin_bottom = 249.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="ainrofila" type="LinkButton" parent="." index="17"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 715.0
+margin_top = 251.0
+margin_right = 755.0
+margin_bottom = 265.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="atoka" type="LinkButton" parent="." index="18"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 745.0
+margin_top = 266.0
+margin_right = 785.0
+margin_bottom = 280.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="not_gishaw" type="LinkButton" parent="." index="19"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 760.0
+margin_top = 293.0
+margin_right = 800.0
+margin_bottom = 307.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="anozira" type="LinkButton" parent="." index="20"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 446.0
+margin_top = 264.0
+margin_right = 486.0
+margin_bottom = 278.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="ambala" type="LinkButton" parent="." index="21"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 536.0
+margin_top = 263.0
+margin_right = 576.0
+margin_bottom = 277.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="ipissim" type="LinkButton" parent="." index="22"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 459.0
+margin_top = 287.0
+margin_right = 499.0
+margin_bottom = 301.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="anaisol" type="LinkButton" parent="." index="23"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 545.0
+margin_top = 287.0
+margin_right = 585.0
+margin_bottom = 301.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="kutne" type="LinkButton" parent="." index="24"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 106.0
+margin_top = 294.0
+margin_right = 146.0
+margin_bottom = 308.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="anilarock" type="LinkButton" parent="." index="25"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 173.0
+margin_top = 294.0
+margin_right = 213.0
+margin_bottom = 308.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="adrifall" type="LinkButton" parent="." index="26"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 112.0
+margin_top = 323.0
+margin_right = 152.0
+margin_bottom = 337.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="nalyram" type="LinkButton" parent="." index="27"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 171.0
+margin_top = 327.0
+margin_right = 211.0
+margin_bottom = 341.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="liawah" type="LinkButton" parent="." index="28"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 317.0
+margin_top = 312.0
+margin_right = 357.0
+margin_bottom = 326.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="atosen" type="LinkButton" parent="." index="29"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 394.0
+margin_top = 314.0
+margin_right = 434.0
+margin_bottom = 328.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="vylsnep" type="LinkButton" parent="." index="30"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 326.0
+margin_top = 344.0
+margin_right = 366.0
+margin_bottom = 358.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="odaroloc" type="LinkButton" parent="." index="31"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 396.0
+margin_top = 346.0
+margin_right = 436.0
+margin_bottom = 360.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="awoi" type="LinkButton" parent="." index="32"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 551.0
+margin_top = 322.0
+margin_right = 591.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="enaim" type="LinkButton" parent="." index="33"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 628.0
+margin_top = 315.0
+margin_right = 668.0
+margin_bottom = 329.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="essenet" type="LinkButton" parent="." index="34"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 564.0
+margin_top = 352.0
+margin_right = 604.0
+margin_bottom = 366.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="erishmah" type="LinkButton" parent="." index="35"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 649.0
+margin_top = 347.0
+margin_right = 689.0
+margin_bottom = 361.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="nagicim" type="LinkButton" parent="." index="36"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 525.0
+margin_top = 390.0
+margin_right = 565.0
+margin_bottom = 404.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="stesucham" type="LinkButton" parent="." index="37"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 652.0
+margin_top = 375.0
+margin_right = 692.0
+margin_bottom = 389.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="edohr" type="LinkButton" parent="." index="38"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 744.0
+margin_top = 355.0
+margin_right = 784.0
+margin_bottom = 369.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="adaven" type="LinkButton" parent="." index="39"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 779.0
+margin_top = 328.0
+margin_right = 819.0
+margin_bottom = 342.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="gimoyw" type="LinkButton" parent="." index="40"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 848.0
+margin_top = 459.0
+margin_right = 888.0
+margin_bottom = 473.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="anatom" type="LinkButton" parent="." index="41"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 971.0
+margin_top = 497.0
+margin_right = 1011.0
+margin_bottom = 511.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="tucit" type="LinkButton" parent="." index="42"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 805.0
+margin_top = 522.0
+margin_right = 845.0
+margin_bottom = 536.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="nogero" type="LinkButton" parent="." index="43"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 785.0
+margin_top = 560.0
+margin_right = 825.0
+margin_bottom = 574.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="iroussim" type="LinkButton" parent="." index="44"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 715.0
+margin_top = 42.0
+margin_right = 755.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="iho" type="LinkButton" parent="." index="45"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 870.0
+margin_top = 31.0
+margin_right = 910.0
+margin_bottom = 45.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="amohalko" type="LinkButton" parent="." index="46"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 781.0
+margin_top = 72.0
+margin_right = 821.0
+margin_bottom = 86.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="sionilli" type="LinkButton" parent="." index="47"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 881.0
+margin_top = 92.0
+margin_right = 921.0
+margin_bottom = 106.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="erawalde" type="LinkButton" parent="." index="48"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 431.0
+margin_top = 484.0
+margin_right = 471.0
+margin_bottom = 498.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+
+[node name="icon" type="Sprite" parent="." index="49"]
+
+position = Vector2( 467.507, 207.194 )
+texture = ExtResource( 8 )
+
+[node name="icon2" type="Sprite" parent="." index="50"]
+
+position = Vector2( 467.507, 207.194 )
+texture = ExtResource( 8 )
+
+[node name="icon3" type="Sprite" parent="." index="51"]
+
+position = Vector2( 467.507, 207.194 )
+texture = ExtResource( 8 )
+
+[node name="icon4" type="Sprite" parent="." index="52"]
+
+position = Vector2( 467.507, 207.194 )
+texture = ExtResource( 8 )
+
+[node name="icon5" type="Sprite" parent="." index="53"]
+
+visible = false
+position = Vector2( 467.507, 207.194 )
+texture = ExtResource( 8 )
+
+[connection signal="pressed" from="aigroe" to="." method="_on_aigroe_pressed"]
+
+[connection signal="pressed" from="hatu" to="." method="_on_hatu_pressed"]
+
+[connection signal="pressed" from="sexat" to="." method="_on_sexat_pressed"]
+
+[connection signal="pressed" from="sasnak" to="." method="_on_sasnak_pressed"]
+
+[connection signal="pressed" from="aksala" to="." method="_on_aksala_pressed"]
+
+[connection signal="pressed" from="yesre" to="." method="_on_yesre_pressed"]
+
+[connection signal="pressed" from="nomrev" to="." method="_on_nomrev_pressed"]
+
+[connection signal="pressed" from="kroy" to="." method="_on_kroy_pressed"]
+
+[connection signal="pressed" from="aksarben" to="." method="_on_aksarben_pressed"]
+
+[connection signal="pressed" from="aingri" to="." method="_on_aingri_pressed"]
+
+[connection signal="pressed" from="ainrofila" to="." method="_on_ainrofila_pressed"]
+
+[connection signal="pressed" from="atoka" to="." method="_on_atoka_pressed"]
+
+[connection signal="pressed" from="not_gishaw" to="." method="_on_not_gishaw_pressed"]
+
+[connection signal="pressed" from="anozira" to="." method="_on_anozira_pressed"]
+
+[connection signal="pressed" from="ambala" to="." method="_on_ambala_pressed"]
+
+[connection signal="pressed" from="ipissim" to="." method="_on_ipissim_pressed"]
+
+[connection signal="pressed" from="anaisol" to="." method="_on_anaisol_pressed"]
+
+[connection signal="pressed" from="kutne" to="." method="_on_kutne_pressed"]
+
+[connection signal="pressed" from="anilarock" to="." method="_on_anilarock_pressed"]
+
+[connection signal="pressed" from="adrifall" to="." method="_on_adrifall_pressed"]
+
+[connection signal="pressed" from="nalyram" to="." method="_on_nalyram_pressed"]
+
+[connection signal="pressed" from="liawah" to="." method="_on_liawah_pressed"]
+
+[connection signal="pressed" from="atosen" to="." method="_on_atosen_pressed"]
+
+[connection signal="pressed" from="vylsnep" to="." method="_on_vylsnep_pressed"]
+
+[connection signal="pressed" from="odaroloc" to="." method="_on_odaroloc_pressed"]
+
+[connection signal="pressed" from="awoi" to="." method="_on_awoi_pressed"]
+
+[connection signal="pressed" from="enaim" to="." method="_on_enaim_pressed"]
+
+[connection signal="pressed" from="essenet" to="." method="_on_essenet_pressed"]
+
+[connection signal="pressed" from="erishmah" to="." method="_on_erishmah_pressed"]
+
+[connection signal="pressed" from="nagicim" to="." method="_on_nagicim_pressed"]
+
+[connection signal="pressed" from="stesucham" to="." method="_on_stesucham_pressed"]
+
+[connection signal="pressed" from="edohr" to="." method="_on_edohr_pressed"]
+
+[connection signal="pressed" from="adaven" to="." method="_on_adaven_pressed"]
+
+[connection signal="pressed" from="gimoyw" to="." method="_on_gimoyw_pressed"]
+
+[connection signal="pressed" from="anatom" to="." method="_on_anatom_pressed"]
+
+[connection signal="pressed" from="tucit" to="." method="_on_tucit_pressed"]
+
+[connection signal="pressed" from="nogero" to="." method="_on_nogero_pressed"]
+
+[connection signal="pressed" from="iroussim" to="." method="_on_iroussim_pressed"]
+
+[connection signal="pressed" from="iho" to="." method="_on_iho_pressed"]
+
+[connection signal="pressed" from="amohalko" to="." method="_on_amohalko_pressed"]
+
+[connection signal="pressed" from="sionilli" to="." method="_on_sionilli_pressed"]
+
+[connection signal="pressed" from="erawalde" to="." method="_on_erawalde_pressed"]
+
+
