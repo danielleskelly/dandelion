@@ -1,0 +1,173 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://character.gd" type="Script" id=1]
+[ext_resource path="res://Untitled 1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="character" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+
+[node name="image" type="Sprite" parent="." index="0"]
+
+position = Vector2( 16.3417, 1.93925 )
+scale = Vector2( 0.0175401, 0.016299 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 17.6387, 1.82225 )
+scale = Vector2( 0.386967, 0.894669 )
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="2" groups=[
+"camera",
+]]
+
+position = Vector2( 16.3417, 1.93925 )
+scale = Vector2( 0.0175401, 0.016299 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.1, 0.1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+
+[node name="health_white" type="ColorRect" parent="Camera2D" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2554.0
+margin_top = -1710.0
+margin_right = -1230.0
+margin_bottom = -1578.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="magic_white" type="ColorRect" parent="Camera2D" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2554.0
+margin_top = -1527.0
+margin_right = -1230.0
+margin_bottom = -1395.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="health_color" type="ColorRect" parent="Camera2D" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2554.0
+margin_top = -1710.0
+margin_right = -1230.0
+margin_bottom = -1578.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.898438, 0.514428, 0.577429, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="magic_color" type="ColorRect" parent="Camera2D" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -2554.0
+margin_top = -1527.0
+margin_right = -1230.0
+margin_bottom = -1395.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.539551, 0.203125, 0.609375, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="options" type="LinkButton" parent="Camera2D" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2312.0
+margin_top = -1746.0
+margin_right = 2360.0
+margin_bottom = -1732.0
+rect_scale = Vector2( 10, 10 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "options"
+underline = 2
+_sections_unfolded = [ "Rect" ]
+
+[connection signal="pressed" from="Camera2D/options" to="." method="_on_options_pressed"]
+
+

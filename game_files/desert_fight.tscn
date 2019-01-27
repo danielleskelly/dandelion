@@ -1,0 +1,650 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://desert_fight.gd" type="Script" id=1]
+[ext_resource path="res://Untitled.png" type="Texture" id=2]
+[ext_resource path="res://Untitled 1.png" type="Texture" id=3]
+[ext_resource path="res://desert_fight.tres" type="StyleBox" id=4]
+
+[node name="desert_fight" type="Node2D" groups=[
+"fight",
+]]
+
+pause_mode = 2
+script = ExtResource( 1 )
+_sections_unfolded = [ "Pause" ]
+
+[node name="background" type="Sprite" parent="." index="0"]
+
+position = Vector2( 553, 321 )
+scale = Vector2( 0.563477, 0.467448 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="enemy" type="Sprite" parent="." index="1"]
+
+position = Vector2( 240, 280 )
+scale = Vector2( 0.165365, 0.158203 )
+
+[node name="character" type="Sprite" parent="." index="2"]
+
+position = Vector2( 740, 380 )
+scale = Vector2( 0.25651, 0.171875 )
+texture = ExtResource( 3 )
+
+[node name="enemy_hp_white" type="ColorRect" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 120.0
+margin_right = 420.0
+margin_bottom = 140.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+
+[node name="enemy_hp_color" type="ColorRect" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 120.0
+margin_right = 420.0
+margin_bottom = 140.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+
+[node name="damage" type="RichTextLabel" parent="enemy_hp_color" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = -30.0
+margin_right = 50.0
+margin_bottom = 10.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0.984375, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "5"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="enemy_text_box_border" type="ColorRect" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 480.0
+margin_top = 20.0
+margin_right = 1030.0
+margin_bottom = 210.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.101562, 0.101562, 0.101562, 1 )
+
+[node name="text_box_inside" type="ColorRect" parent="enemy_text_box_border" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 540.0
+margin_bottom = 180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.933594, 0.933594, 0.933594, 1 )
+
+[node name="enemy_name" type="RichTextLabel" parent="enemy_text_box_border" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_top = 30.0
+margin_right = 315.0
+margin_bottom = 60.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Test The tiny demon"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="action" type="RichTextLabel" parent="enemy_text_box_border" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 70.0
+margin_right = 280.0
+margin_bottom = 120.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Test The tiny demon"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="character_text_box_border" type="ColorRect" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 20.0
+margin_top = 360.0
+margin_right = 540.0
+margin_bottom = 570.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.0898438, 0.0898438, 0.0898438, 1 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="text_box_inside" type="ColorRect" parent="character_text_box_border" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 510.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.898438, 0.898438, 0.898438, 1 )
+
+[node name="attack_parent" type="GridContainer" parent="character_text_box_border/text_box_inside" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 5.0
+margin_top = 1.0
+margin_right = 493.0
+margin_bottom = 189.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 3
+_sections_unfolded = [ "Margin", "Rect", "Theme", "custom_constants" ]
+
+[node name="attack1" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 160.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack2" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 164.0
+margin_right = 324.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack3" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 328.0
+margin_right = 488.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack4" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 64.0
+margin_right = 160.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack5" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 164.0
+margin_top = 64.0
+margin_right = 324.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack6" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 328.0
+margin_top = 64.0
+margin_right = 488.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack7" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 128.0
+margin_right = 160.0
+margin_bottom = 188.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack8" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 164.0
+margin_top = 128.0
+margin_right = 324.0
+margin_bottom = 188.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="attack9" type="Button" parent="character_text_box_border/text_box_inside/attack_parent" index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 328.0
+margin_top = 128.0
+margin_right = 488.0
+margin_bottom = 188.0
+rect_min_size = Vector2( 160, 60 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 4 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Rect", "custom_styles" ]
+
+[node name="character_bars" type="Node2D" parent="." index="7"]
+
+[node name="health_white" type="ColorRect" parent="character_bars" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 600.0
+margin_top = 490.0
+margin_right = 650.0
+margin_bottom = 510.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="magic_white" type="ColorRect" parent="character_bars" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 600.0
+margin_top = 515.0
+margin_right = 650.0
+margin_bottom = 535.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.537255, 0.2, 0.607843, 1 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="health_color" type="ColorRect" parent="character_bars" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 600.0
+margin_top = 490.0
+margin_right = 650.0
+margin_bottom = 510.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.898039, 0.513726, 0.576471, 1 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="damage" type="RichTextLabel" parent="character_bars/health_color" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = -30.0
+margin_right = 40.0
+margin_bottom = 10.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0.984375, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "5"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="magic_color" type="ColorRect" parent="character_bars" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 600.0
+margin_top = 515.0
+margin_right = 650.0
+margin_bottom = 535.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0.537255, 0.2, 0.607843, 1 )
+_sections_unfolded = [ "Theme" ]
+
+[node name="spent" type="RichTextLabel" parent="character_bars/magic_color" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = -55.0
+margin_right = 40.0
+margin_bottom = -15.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0.984375, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "5"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "custom_colors" ]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack1" to="." method="_on_attack1_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack2" to="." method="_on_attack2_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack3" to="." method="_on_attack3_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack4" to="." method="_on_attack4_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack5" to="." method="_on_attack5_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack6" to="." method="_on_attack6_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack7" to="." method="_on_attack7_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack8" to="." method="_on_attack8_pressed"]
+
+[connection signal="pressed" from="character_text_box_border/text_box_inside/attack_parent/attack9" to="." method="_on_attack9_pressed"]
+
+
